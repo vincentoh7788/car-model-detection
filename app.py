@@ -6,7 +6,7 @@ import numpy as np
 
 # Load the model
 model = YOLO('best.pt')
-names_file = './raw/names.csv'
+names_file = 'names.csv'
 with open(names_file, 'r') as f:
     class_names = [line.strip() for line in f.readlines()]
 
